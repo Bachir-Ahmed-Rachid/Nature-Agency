@@ -1,0 +1,27 @@
+.card {
+  height: 50rem;
+  position: relative;
+  &__side {
+    width: 100%;
+    background-color: #fff;
+    height: 50rem;
+
+    // &--front {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+    &--back {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &:hover &__side {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+  }
+}
